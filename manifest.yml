@@ -1,0 +1,13 @@
+applications:
+- name: Kyselylomake
+  host: kyselylomake
+  memory: 128M
+  domain: eu-gb.mybluemix.net
+  services:
+  - sample-node-red-cloudantNoSQLDB
+  env:
+    NODE_RED_STORAGE_NAME: sample-node-red-cloudantNoSQLDB
+declared-services:
+  sample-node-red-cloudantNoSQLDB:
+    label: cloudantNoSQLDB
+    plan:  Lite
